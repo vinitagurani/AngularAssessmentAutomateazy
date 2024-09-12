@@ -1,0 +1,106 @@
+
+
+<mat-card>
+  <mat-card-title>Leads</mat-card-title>
+  <table mat-table [dataSource]="dataSource" matSort>
+
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Lead ID </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Prospect Name </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.name}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="phone">
+      <th mat-header-cell *matHeaderCellDef> Phone </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.phone}} </td>
+    </ng-container>
+
+ 
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef> Email </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.email}} </td>
+    </ng-container>
+
+  
+    <ng-container matColumnDef="college">
+      <th mat-header-cell *matHeaderCellDef> College </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.clg_name}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef> Course </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.course}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="applicationForm">
+      <th mat-header-cell *matHeaderCellDef> Application Form </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.applicationForm}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="lastOutgoingCallStatus">
+      <th mat-header-cell *matHeaderCellDef> Last Outgoing Call Status </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.last_call_status}} </td>
+    </ng-container>
+
+   
+    <ng-container matColumnDef="lastOutgoingCallAt">
+      <th mat-header-cell *matHeaderCellDef> Last Outgoing Call At </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.last_out_call_at}} </td>
+    </ng-container>
+
+  
+    <ng-container matColumnDef="lastActivity">
+      <th mat-header-cell *matHeaderCellDef> Last Activity </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.lastActivity}} </td>
+    </ng-container>
+
+   
+    <ng-container matColumnDef="leadPriority">
+      <th mat-header-cell *matHeaderCellDef> Lead Priority </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.priority}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="instanceType">
+      <th mat-header-cell *matHeaderCellDef> Instance Type </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.instanceType}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="leadInstanceSource">
+      <th mat-header-cell *matHeaderCellDef> Lead Instance Source </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.prmary_source}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="leadType">
+      <th mat-header-cell *matHeaderCellDef> Lead Type </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.lead_type}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="leadOwnerAssignmentAge">
+      <th mat-header-cell *matHeaderCellDef> Lead Owner Assignment Age </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.lead_owner_change_age}} </td>
+    </ng-container>
+
+ 
+    <ng-container matColumnDef="leadOwner">
+      <th mat-header-cell *matHeaderCellDef> Lead Owner </th>
+      <td mat-cell *matCellDef="let lead"> {{lead.leadOwner}} </td>
+    </ng-container>
+
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSize]="pageSize" [length]="totalRecords" (page)="onPageChange($event)"></mat-paginator>
+</mat-card> 
+

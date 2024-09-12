@@ -1,0 +1,39 @@
+
+/* Hide page size options and other elements */
+.mat-paginator .mat-select {
+    display: none; /* Hide page size selector */
+  }
+  
+  .mat-paginator .mat-paginator-page-size {
+    display: none; /* Hide page size text */
+  }
+  
+  .mat-paginator .mat-paginator-range-label {
+    display: none; /* Hide the range label */
+  }
+  
+  /* .mat-paginator .mat-paginator-navigation-previous 
+  .mat-paginator .mat-paginator-navigation-next {
+  
+  } */
+  
+  .mat-paginator .mat-paginator-page-size {
+    display: none; /* Hide page size selection */
+  }
+  
+  /* Show only page numbers and navigation */
+  .mat-paginator .mat-paginator-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mat-paginator .mat-paginator-page {
+    margin: 0 5px; /* Space out page numbers */
+  }
+  
+  .mat-paginator .mat-paginator-navigation-previous,
+  .mat-paginator .mat-paginator-navigation-next {
+    margin: 0 10px; /* Space out navigation buttons */
+  }
+  

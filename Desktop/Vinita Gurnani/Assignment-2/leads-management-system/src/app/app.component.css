@@ -1,0 +1,29 @@
+/* Ensures the body and html take the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #9595e6;
+  }
+
+
+  
+  nav {
+    display: flex;
+    justify-content: center; /* Center align the navigation items */
+  }
+  
+  .heading {
+    font-size: 2rem; /* Font size for the heading */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-weight: bold; /* Font weight */
+    color: #333; /* Font color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Footer styles */
+  footer {
+  background-color:  #9595e6;
+  }
+  
+
+  
