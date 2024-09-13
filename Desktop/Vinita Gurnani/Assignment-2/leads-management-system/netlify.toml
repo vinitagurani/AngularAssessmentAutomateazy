@@ -2,10 +2,10 @@
 
 [build]
   # Directory where the Angular build outputs the production files
-  publish = "dist/browser"
+  publish = "dist/leads-management-system"
   
   # Command to build the Angular project
-  command = "ng build"
+  command = "npm run build"
 
   base = "LEADS-MANAGEMENT-SYSTEM"
 
