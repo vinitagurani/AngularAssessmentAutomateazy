@@ -5,7 +5,7 @@
   publish = "dist/browser"
   
   # Command to build the Angular project
-  command = "npm run build"
+  command = "ng build"
 
   base = "LEADS-MANAGEMENT-SYSTEM"
 
