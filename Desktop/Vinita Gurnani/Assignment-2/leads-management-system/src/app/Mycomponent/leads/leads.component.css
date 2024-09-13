@@ -1,7 +1,7 @@
 
 /* Hide page size options and other elements */
 .mat-paginator .mat-select {
-    display: none; /* Hide page size selector */
+    display: none;
   }
   
   .mat-paginator .mat-paginator-page-size {
@@ -9,13 +9,8 @@
   }
   
   .mat-paginator .mat-paginator-range-label {
-    display: none; /* Hide the range label */
+    display: none; 
   }
-  
-  /* .mat-paginator .mat-paginator-navigation-previous 
-  .mat-paginator .mat-paginator-navigation-next {
-  
-  } */
   
   .mat-paginator .mat-paginator-page-size {
     display: none; /* Hide page size selection */
@@ -35,5 +30,24 @@
   .mat-paginator .mat-paginator-navigation-previous,
   .mat-paginator .mat-paginator-navigation-next {
     margin: 0 10px; /* Space out navigation buttons */
+  }
+
+  .leads-container {
+    background-color: var(--white); /* Ensure the main container has the white background */
+    padding: 16px;
+    overflow-x: auto; /* To handle scrolling horizontally if required */
+  }
+  mat-card {
+    background-color: var(--white); /* Ensures the card itself maintains the white background */
+    box-shadow: none; /* Optional: remove shadow if not needed */
+  }
+  mat-header-row, mat-row {
+    background-color: var(--white); /* Applies to all rows to maintain consistency */
+  }
+  html, body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents extra scrollbars due to overflow */
   }
   
