@@ -1,0 +1,16 @@
+# Netlify configuration file for Angular project
+
+[build]
+  # Directory where the Angular build outputs the production files
+  publish = "dist/browser"
+  
+  # Command to build the Angular project
+  command = "ng build --prod"
+
+  base = "LEADS-MANAGEMENT-SYSTEM"
+
+[[redirects]]
+  # Redirect all requests to index.html (this is necessary for Angular routing to work on Netlify)
+  from = "/*"
+  to = "/index.html"
+  status = 200

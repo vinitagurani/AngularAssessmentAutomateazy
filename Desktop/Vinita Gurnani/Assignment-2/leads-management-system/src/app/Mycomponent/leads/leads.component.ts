@@ -150,7 +150,7 @@ export class LeadsComponent implements OnInit {
           next: (response: any) => {
             console.log('Response:', response);
 
-            this.totalRecords = response.count;
+            this.totalRecords = this.totalRecords === 0? response.count:this.totalRecords;
             const newLeads = response.data || [];
             this.dataSource.data = newLeads; // Set the data directly to the dataSource
             this.dataSource.paginator = this.paginator;
