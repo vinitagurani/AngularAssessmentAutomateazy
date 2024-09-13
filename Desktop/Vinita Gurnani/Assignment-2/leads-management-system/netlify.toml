@@ -7,7 +7,7 @@
   # Command to build the Angular project
   command = "npm run build"
 
-  base = "LEADS-MANAGEMENT-SYSTEM"
+  base = "leads-management-system"
 
 [[redirects]]
   # Redirect all requests to index.html (this is necessary for Angular routing to work on Netlify)
